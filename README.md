@@ -56,10 +56,10 @@ xm7 net40 a b vss n105 w=0.1u l=0.03u nf=1 m=1</br>
 xm1 cout net37 cin vss n105 w=0.1u l=0.03u nf=1 m=1</br>
 xm0 net40 cin sum vss n105 w=0.1u l=0.03u nf=1 m=1</br>
 xm6 net40 net45 net25 vdd p105 w=0.1u l=0.03u nf=1 m=1</br>
-xm5 net25 b vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
-xm4 net37 net40 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
-xm3 cout net37 net45 vdd p105 w=0.1u l=0.03u nf=1 m=1
-xm2 net37 cin sum vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm5 net25 b vdd vdd p105 w=0.1u l=0.03u nf=1 m=1</br>
+xm4 net37 net40 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1</br>
+xm3 cout net37 net45 vdd p105 w=0.1u l=0.03u nf=1 m=1</br>
+xm2 net37 cin sum vdd p105 w=0.1u l=0.03u nf=1 m=1</br>
 .ends _1_bit_fa
 
 ********************************************************************************
