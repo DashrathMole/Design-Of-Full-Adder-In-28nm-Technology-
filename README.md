@@ -1,4 +1,4 @@
-# Design-Of-Full-Adder-In-28nm-Technology-
+# Design-Of-1Bit-Full-Adder-In-28nm-Technology-
 
 In this repository I designed Full adder in 28nm technology using Synopsys Custom Compiler.
 
