@@ -21,6 +21,92 @@ I designed and simulated a low power one bit, full adder circuits namely Novel 1
 *Synopsys 28nm PDK*:  The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above circuit design.<br/>
 # Full adder  <br/>
 FA_Schematics<br/>
-![FA_Schematics]![Screenshot (1119)](https://user-images.githubusercontent.com/100442412/156121964-b53c4dbf-d20e-4569-bbd4-8c33eb510459.png)
+![FA_Schematics]!(https://user-images.githubusercontent.com/100442412/156121964-b53c4dbf-d20e-4569-bbd4-8c33eb510459.png)
 FA_Symbol<br/>
-![FA_Symbol](https://user-images.githubusercontent.com/88282645/155843416-c57017f4-8a39-4667-97e7-5c16dbe04b31.png)<br/>
+![Screenshot(1123)](https://user-images.githubusercontent.com/100442412/156142944-2648b626-f11c-49f7-96c5-72d2e5414c44.png)
+# Testbench schematics<br/>
+![Testbench schematics](https://user-images.githubusercontent.com/100442412/156143060-a6331bdf-723a-44c0-a4ab-39ac6cf8f1d0.png)
+# Simulation result<br/>
+![waveform](https://user-images.githubusercontent.com/100442412/156143133-e64dc6e6-280b-49ae-8b29-63d5800247f9.png)
+# Total transistor count<br/>
+Block name-Tansistor count
+1Bit Full adder -10
+# Netlist<br/>
+*  Generated for: PrimeSim
+*  Design library name: 1_bit_FullAdder
+*  Design cell name: 1_bit_FA_tb
+*  Design view name: schematic
+.lib 'saed32nm.lib' TT
+
+*Custom Compiler Version S-2021.09
+*Tue Mar  1 09:56:36 2022
+
+.global gnd!
+********************************************************************************
+* Library          : 1_bit_FullAdder
+* Cell             : 1_bit_FA
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+.subckt _1_bit_fa vdd vss a b cin cout sum
+xm9 net37 net40 vss vss n105 w=0.1u l=0.03u nf=1 m=1
+xm8 net40 b net45 vss n105 w=0.1u l=0.03u nf=1 m=1
+xm7 net40 a b vss n105 w=0.1u l=0.03u nf=1 m=1
+xm1 cout net37 cin vss n105 w=0.1u l=0.03u nf=1 m=1
+xm0 net40 cin sum vss n105 w=0.1u l=0.03u nf=1 m=1
+xm6 net40 net45 net25 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm5 net25 b vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm4 net37 net40 vdd vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm3 cout net37 net45 vdd p105 w=0.1u l=0.03u nf=1 m=1
+xm2 net37 cin sum vdd p105 w=0.1u l=0.03u nf=1 m=1
+.ends _1_bit_fa
+
+********************************************************************************
+* Library          : 1_bit_FullAdder
+* Cell             : 1_bit_FA_tb
+* View             : schematic
+* View Search List : hspice hspiceD schematic spice veriloga
+* View Stop List   : hspice hspiceD
+********************************************************************************
+xi0 net8 gnd! in1 in2 in3 out carry _1_bit_fa
+v1 net8 gnd! dc=1.8
+v7 in3 gnd! dc=0 pulse ( 0 1 0 0.1u 0.1u 12u 24u )
+v6 in2 gnd! dc=0 pulse ( 0 1 0 0.1u 0.1u 6u 12u )
+v5 in1 gnd! dc=0 pulse ( 0 1 0 0.1u 0.1u 3u 6u )
+
+.tran '1u' '30' name=tran
+
+.option primesim_remove_probe_prefix = 0
+.probe v(*) i(*) level=1
+.probe tran v(out) v(in1) v(in2) v(in3) v(carry)
+
+.temp 25
+
+.option primesim_output=wdf
+
+
+.option parhier = LOCAL
+
+.end
+# Author<br/>
+Dashrath P Mole, Third Year Electronics at Walchand College of Engineering Sangli,Maharashta,India.
+# Acknowledgements <br/>
+[Kunal Ghosh, Co-founder, VSD Corp. Pvt. Ltd.](https://www.linkedin.com/in/kunal-ghosh-vlsisystemdesign-com-28084836/)<br/>
+[Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)<br/>
+[Synopsys India](https://www.synopsys.com/)<br/>
+# Reference <br/>
+[1]	Neil H. E. Weste, David Harris and Ayan Banerjee, “CMOS VLSI Design, a Circuit and System Perspective”, 
+    Third Edition, Pearson Education, Inc., (2005).
+   
+ [2]	Sung-Mo (Steve) Kang and Yusuf Leblebici, “CMOS 
+      Digital Integrated Circuits Analysis & Design”, Tata McGraw-Hill, (2005). 
+      
+[3]	Manoj Kumar, Sandeep K. Arya, and Sujata Pandey, “A New Low Power Single Bit Full Adder Design with 14 Transistors using Novel 3 Transistors XOR Gate”,
+
+[4] Udemy.com (Kunal Ghosh Sir Lectures).
+
+
+
+
+
