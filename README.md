@@ -1,6 +1,6 @@
 # Design-Of-Full-Adder-In-28nm-Technology-
 
-This repository I designed Full adder in 28nm technology using Synopsys Custom Compiler.
+In this repository I designed Full adder in 28nm technology using Synopsys Custom Compiler.
 
 # Table Of Content <br/>
 * [Abstract](https://github.com/DashrathMole/Design-Of-Full-Adder/edit/main/README.md#abstract-)<br/>
@@ -21,7 +21,7 @@ I designed and simulated a low power one bit, full adder circuits namely Novel 1
 *Synopsys 28nm PDK*:  The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above circuit design.<br/>
 # Full adder  <br/>
 FA_Schematics<br/>
-![FA_Schematics]!(https://user-images.githubusercontent.com/100442412/156121964-b53c4dbf-d20e-4569-bbd4-8c33eb510459.png)
+![FA_Schematics](https://user-images.githubusercontent.com/100442412/156121964-b53c4dbf-d20e-4569-bbd4-8c33eb510459.png)
 FA_Symbol<br/>
 ![Screenshot(1123)](https://user-images.githubusercontent.com/100442412/156142944-2648b626-f11c-49f7-96c5-72d2e5414c44.png)
 # Testbench schematics<br/>
@@ -29,14 +29,13 @@ FA_Symbol<br/>
 # Simulation result<br/>
 ![waveform](https://user-images.githubusercontent.com/100442412/156143133-e64dc6e6-280b-49ae-8b29-63d5800247f9.png)
 # Total transistor count<br/>
-Block name-Tansistor count
-1Bit Full adder -10
+Tansistor count-10
 # Netlist<br/>
 *  Generated for: PrimeSim
 *  Design library name: 1_bit_FullAdder
 *  Design cell name: 1_bit_FA_tb
 *  Design view name: schematic
-.lib 'saed32nm.lib' TT
+  .lib 'saed32nm.lib' TT
 
 *Custom Compiler Version S-2021.09
 *Tue Mar  1 09:56:36 2022
@@ -50,6 +49,7 @@ Block name-Tansistor count
 * View Stop List   : hspice hspiceD
 ********************************************************************************
 .subckt _1_bit_fa vdd vss a b cin cout sum
+
 xm9 net37 net40 vss vss n105 w=0.1u l=0.03u nf=1 m=1
 xm8 net40 b net45 vss n105 w=0.1u l=0.03u nf=1 m=1
 xm7 net40 a b vss n105 w=0.1u l=0.03u nf=1 m=1
