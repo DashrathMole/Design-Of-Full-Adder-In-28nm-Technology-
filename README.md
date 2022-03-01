@@ -3,9 +3,13 @@
 This repository I designed Full adder in 28nm technology using Synopsys Custom Compiler.
 
 # Table Of Content <br/>
-* [Abstract](https://github.com/DashrathMole/Design-Of-Full-Adder-In-28nm-Technology/edit/main/README.md#abstract-)<br/>
-  In this paper, we designed and simulated a low power one bit, full adder circuits namely Novel 10T the adder are tested by using one bit ripple carry adder architecture.The       one bit Novel 10T,XOR/XNOR function technique has been used for the generation of full adders. The proposed design successfully works with the buffering circuit in the full       adder design. All full adder circuits are design and analyse using 28nm Technology with 500 Mega Hertz frequency at 0.9 volt supply voltage. Due to lesser length requirement in   the individual transistor, all the design of adders require lesser area as compared to existing design results in the tables. There is also improvement in terms of power, delay   and power-delay product.
-  
-  [Detailed Explanation with reference Block diagram](https://github.com/DashrathMole/Design-Of-Full-Adder-In-28nm-Technology/edit/main/README.md#detailed-explanation-with-       reference-block-diagram)<br/>
-
-
+* [Abstract](https://github.com/DashrathMole/Design-Of-Full-Adder/edit/main/README.md#abstract-)<br/>
+* [Tool used](https://github.com/DashrathMole/Design-Of-Full-Adder/edit/main/README.md#tool-used)<br/>
+ * [Full adder implementation using Transmission logic](https://github.com/DashrathMole/Design-Of-Full-Adder-In-28nm-Technology/edit/main/README.md#full-adder-                  implementation-using-transmission-logic-)<br/>
+ *  [Testbench schematics of Design-Of-Full-Adder](https://github.com/DashrathMole/Design-Of-Full-Adder/edit/main/README.md#testbench-schematics-of-8-bit-carry-select-adder-with-   binary-to-excess-one-converter)<br/>
+* [Simulation result](https://github.com/DashrathMole/Design-Of-Full-Adder-In-28nm-Technology/edit/main/README.md#simulation-result)<br/>
+* [Transistor count for each block](https://github.com/DashrathMole/Design-Of-Full-Adder-In-28nm-Technology/blob/main/README.md#transistor-count-for-each-block)   <br/>
+* [Netlist](https://github.com/DashrathMole/Design-Of-Full-Adder/edit/main/README.md#netlist)<br/>
+* [Author](https://github.com/DashrathMole/Design-Of-Full-Adder/edit/main/README.md#author)<br/>
+* [Acknowledgements](https://github.com/DashrathMole/Design-Of-Full-Adder/edit/main/README.md#acknowledgements-)<br/>
+* [Reference](https://github.com/DashrathMole/Design-Of-Full-Adder/edit/main/README.md#reference-)<br/>
