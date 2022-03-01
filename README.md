@@ -27,10 +27,10 @@ One bit N10T full adder circuit are shown in Figure 1. In the Novel 10T adder ci
 The motive of this paper is to design a low power full adder circuit with the N10T method. The full adder circuit is shown in Figure 1. Compared to the various structures, a typical one bit full adder in N10T logic has only 10 transistors and the number of interconnections between them is highly reduced by using XOR/XNOR gates. 
 
 
-FA_Schematics<br/>
+ #FA_Schematics<br/>
 ![FA_Schematics](https://user-images.githubusercontent.com/100442412/156121964-b53c4dbf-d20e-4569-bbd4-8c33eb510459.png)
 
- FA_Symbol<br/>
+ #FA_Symbol<br/>
 ![Screenshot(1123)](https://user-images.githubusercontent.com/100442412/156142944-2648b626-f11c-49f7-96c5-72d2e5414c44.png)
 # Testbench schematics<br/>
 ![Testbench schematics](https://user-images.githubusercontent.com/100442412/156143060-a6331bdf-723a-44c0-a4ab-39ac6cf8f1d0.png)
