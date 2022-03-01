@@ -69,17 +69,17 @@ xm2 net37 cin sum vdd p105 w=0.1u l=0.03u nf=1 m=1</br>
 * View Search List : hspice hspiceD schematic spice veriloga
 * View Stop List   : hspice hspiceD
 ********************************************************************************
-xi0 net8 gnd! in1 in2 in3 out carry _1_bit_fa
-v1 net8 gnd! dc=1.8
-v7 in3 gnd! dc=0 pulse ( 0 1 0 0.1u 0.1u 12u 24u )
-v6 in2 gnd! dc=0 pulse ( 0 1 0 0.1u 0.1u 6u 12u )
-v5 in1 gnd! dc=0 pulse ( 0 1 0 0.1u 0.1u 3u 6u )
+xi0 net8 gnd! in1 in2 in3 out carry _1_bit_fa</br
+v1 net8 gnd! dc=1.8</br>
+v7 in3 gnd! dc=0 pulse ( 0 1 0 0.1u 0.1u 12u 24u )</br>
+v6 in2 gnd! dc=0 pulse ( 0 1 0 0.1u 0.1u 6u 12u )</br>
+v5 in1 gnd! dc=0 pulse ( 0 1 0 0.1u 0.1u 3u 6u )</br>
 
 .tran '1u' '30' name=tran
 
-.option primesim_remove_probe_prefix = 0
-.probe v(*) i(*) level=1
-.probe tran v(out) v(in1) v(in2) v(in3) v(carry)
+.option primesim_remove_probe_prefix = 0</br>
+.probe v(*) i(*) level=1</br>
+.probe tran v(out) v(in1) v(in2) v(in3) v(carry)</br>
 
 .temp 25
 
