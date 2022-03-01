@@ -5,6 +5,7 @@ In this repository I designed Full adder in 28nm technology using Synopsys Custo
 # Table Of Content <br/>
 * [Abstract](https://github.com/DashrathMole/Design-Of-Full-Adder/edit/main/README.md#abstract-)<br/>
 * [Tool used](https://github.com/DashrathMole/Design-Of-Full-Adder/edit/main/README.md#tool-used)<br/>
+* [Implementation of FA_](https://github.com/DashrathMole/Design-Of-Full-Adder/edit/main/README.md#Full-Adder)<br/>
 * [Design-Of-Full-Adder](https://github.com/DashrathMole/Design-Of-Full-Adder/edit/main/README.md#Design-Of-Full-Adder)<br/>
 * [Testbench schematics ](https://github.com/DashrathMole/Design-Of-Full-Adder/edit/main/README.md#Testbench-schematics)<br/>
 * [Simulation result](https://github.com/DashrathMole/Design-Of-Full-Adder-In-28nm-Technology/edit/main/README.md#simulation-result)<br/>
@@ -19,10 +20,17 @@ I designed and simulated a low power one bit, full adder circuits namely Novel 1
 *Synopsys Custom Compiler*:  The Synopsys Custom Compiler™ design environment is a modern solution for full-custom analog, custom digital, and mixed-signal IC design. As the heart of the Synopsys Custom Design Platform, Custom Compiler provides design entry, simulation management and analysis, and custom layout editing features. This tool was used to design the circuit on a transistor level.<br/>
 *Synopsys Primewave*:  PrimeWave™ Design Environment is a comprehensive and flexible environment for simulation setup and analysis of analog, RF, mixed-signal design, custom-digital and memory designs within the Synopsys Custom Design Platform. This tool helped in various types of simulations of the above designed circuit.<br/>
 *Synopsys 28nm PDK*:  The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above circuit design.<br/>
-# Full adder  <br/>
+# Full Adder Implemetation  <br/>
+One bit N10T full adder circuit are shown in Figure 1. In the Novel 10T adder circuit, 3 transistors are used for generating of XOR functions . In one-bit binary full adder, three one-bit inputs: A, B and Cin and outputs: sum and carry.  
+   Sum = (A  B)  Cin)                 (1) 
+    Carry = A. B + Cin (A  B)            (2) 
+The motive of this paper is to design a low power full adder circuit with the N10T method. The full adder circuit is shown in Figure 1. Compared to the various structures, a typical one bit full adder in N10T logic has only 10 transistors and the number of interconnections between them is highly reduced by using XOR/XNOR gates. 
+
+
 FA_Schematics<br/>
 ![FA_Schematics](https://user-images.githubusercontent.com/100442412/156121964-b53c4dbf-d20e-4569-bbd4-8c33eb510459.png)
-FA_Symbol<br/>
+
+ FA_Symbol<br/>
 ![Screenshot(1123)](https://user-images.githubusercontent.com/100442412/156142944-2648b626-f11c-49f7-96c5-72d2e5414c44.png)
 # Testbench schematics<br/>
 ![Testbench schematics](https://user-images.githubusercontent.com/100442412/156143060-a6331bdf-723a-44c0-a4ab-39ac6cf8f1d0.png)
