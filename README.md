@@ -21,6 +21,6 @@ I designed and simulated a low power one bit, full adder circuits namely Novel 1
 *Synopsys 28nm PDK*:  The Synopsys 28nm Process Design Kit(PDK) was used in creation and simulation of the above circuit design.<br/>
 # Full adder  <br/>
 FA_Schematics<br/>
-![FA_Schematics](https://user-images.githubusercontent.com/88282645/155843412-c6b9d881-4df1-4882-b2ed-0995cc03e5e8.png)<br/>
+![FA_Schematics]![Screenshot (1119)](https://user-images.githubusercontent.com/100442412/156121964-b53c4dbf-d20e-4569-bbd4-8c33eb510459.png)
 FA_Symbol<br/>
 ![FA_Symbol](https://user-images.githubusercontent.com/88282645/155843416-c57017f4-8a39-4667-97e7-5c16dbe04b31.png)<br/>
